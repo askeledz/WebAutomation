@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- Don't set the suite's "time-out" parameter otherwise it will cause tests 
+	not to run at all -->
+<suite name="Test executed using local WebDriver" parallel="tests">
+	<parameter name="hubURL" value="http://localhost:4444/wd/hub" />
+	<listeners>
+		<listener class-name="com.askeledz.driver.RemoteWebDriverListener" />
+	</listeners>
+	<test name="Tests run in FF">
+		<parameter name="browserName" value="firefox" />
+		<packages>
+			<package name="com.askeledz.test" />
+		</packages>
+		<classes>
+			<class name="com.askeledz.test.VerifyWBD" />
+			<!-- <class name="com.askeledz.test.SecondTestClass" /> -->
+		</classes>
+	</test>
+	<test name="Tests run in Chrome">
+		<parameter name="browserName" value="chrome" />
+		<packages>
+			<package name="com.askeledz.test" />
+		</packages>
+		<classes>
+			<class name="com.askeledz.test.VerifyWBD" />
+			<!-- <class name="com.askeledz.test.SecondTestClass" /> -->
+		</classes>
+	</test>
+
+<!-- 	<test name="Tests run in ie">
+		<parameter name="browserName" value="ie" />
+		<packages>
+			<package name="com.askeledz.test" />
+		</packages>
+	</test> -->
+
+</suite>
