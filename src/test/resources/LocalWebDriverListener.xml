@@ -22,9 +22,9 @@
 		<package name="com.askeledz.test" /> 
 		</packages> -->
 		<classes>
-<!-- 			<class name="com.askeledz.test.VerifyWBDTest" /> -->
+			<class name="com.askeledz.test.wbd.VerifyWBDTest" />
 			<!-- <class name="com.askeledz.test.SecondTestClass" /> -->
-			<class name="com.askeledz.test.JoinEnvyGramTest" />
+<!-- 			<class name="com.askeledz.test.envygram.JoinEnvyGramTest" /> -->
 			
 		</classes>
 	</test>

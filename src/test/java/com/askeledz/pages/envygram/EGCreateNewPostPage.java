@@ -1,4 +1,4 @@
-package com.askeledz.pages;
+package com.askeledz.pages.envygram;
 
 import java.util.List;
 

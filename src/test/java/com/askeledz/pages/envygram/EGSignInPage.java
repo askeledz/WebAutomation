@@ -1,4 +1,4 @@
-package com.askeledz.pages;
+package com.askeledz.pages.envygram;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

@@ -1,14 +1,14 @@
-package com.askeledz.test;
+package com.askeledz.test.envygram;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import com.askeledz.driver.DriverManager;
-import com.askeledz.pages.EGAccountSettingsPage;
-import com.askeledz.pages.EGCreateNewPostPage;
-import com.askeledz.pages.EGHomePage;
-import com.askeledz.pages.EGLoginPage;
-import com.askeledz.pages.EGSignInPage;
+import com.askeledz.pages.envygram.EGAccountSettingsPage;
+import com.askeledz.pages.envygram.EGCreateNewPostPage;
+import com.askeledz.pages.envygram.EGHomePage;
+import com.askeledz.pages.envygram.EGLoginPage;
+import com.askeledz.pages.envygram.EGSignInPage;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package com.askeledz.test;
+package com.askeledz.test.envygram;
 
 import org.testng.annotations.Test;
 
