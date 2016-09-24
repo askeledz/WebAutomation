@@ -18,10 +18,14 @@
 	</test> -->
 	<test name="Tests run in Chrome">
 		<parameter name="browserName" value="chrome" />
-		<packages> <package name="com.askeledz.test" /> </packages>
+<!-- 		<packages> 
+		<package name="com.askeledz.test" /> 
+		</packages> -->
 		<classes>
-			<class name="com.askeledz.test.VerifyWBDTest" />
+<!-- 			<class name="com.askeledz.test.VerifyWBDTest" /> -->
 			<!-- <class name="com.askeledz.test.SecondTestClass" /> -->
+			<class name="com.askeledz.test.JoinEnvyGramTest" />
+			
 		</classes>
 	</test>
 <!-- 	<test name="Tests run in Safari">
