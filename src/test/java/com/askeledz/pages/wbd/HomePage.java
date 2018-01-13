@@ -5,10 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import com.askeledz.driver.DriverManager;
 
 /**
  * @author askeledzija
@@ -27,7 +23,7 @@ public class HomePage {
 
     // go to data page from home page
     public DataPage goToDataPage(){
-        new WebDriverWait(driver, 60).until(ExpectedConditions.visibilityOf(data_link));
+     //   new WebDriverWait(driver, 60).until(ExpectedConditions.visibilityOf(data_link));
         data_link.click();
         return new DataPage(driver);
     }

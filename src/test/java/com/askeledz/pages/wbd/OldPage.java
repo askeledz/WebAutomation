@@ -5,8 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
  * @author askeledzija
@@ -29,7 +27,7 @@ public class OldPage {
 
 
     public CountryPage goToCountryIncomePage() {
-        new WebDriverWait(driver, 60).until(ExpectedConditions.visibilityOf(byCountry_link));
+    //    new WebDriverWait(driver, 60).until(ExpectedConditions.visibilityOf(byCountry_link));
         byCountry_link.click();
         return new CountryPage(driver);
 

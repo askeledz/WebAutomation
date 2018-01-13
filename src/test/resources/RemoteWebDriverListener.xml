@@ -7,23 +7,23 @@
 	<listeners>
 		<listener class-name="com.askeledz.driver.RemoteWebDriverListener" />
 	</listeners>
-	<test name="Tests run in FF">
-		<parameter name="browserName" value="firefox" />
-		<packages>
-			<package name="com.askeledz.test" />
-		</packages>
-		<classes>
-			<class name="com.askeledz.test.VerifyWBD" />
-			<!-- <class name="com.askeledz.test.SecondTestClass" /> -->
-		</classes>
-	</test>
 	<test name="Tests run in Chrome">
 		<parameter name="browserName" value="chrome" />
 		<packages>
 			<package name="com.askeledz.test" />
 		</packages>
 		<classes>
-			<class name="com.askeledz.test.VerifyWBD" />
+			<class name="com.askeledz.test.wbd.VerifyWBDTest" />
+			<!-- <class name="com.askeledz.test.SecondTestClass" /> -->
+		</classes>
+	</test>
+	<test name="Tests run in Firefox">
+		<parameter name="browserName" value="firefox" />
+		<packages>
+			<package name="com.askeledz.test" />
+		</packages>
+		<classes>
+			<class name="com.askeledz.test.wbd.VerifyWBDTest" />
 			<!-- <class name="com.askeledz.test.SecondTestClass" /> -->
 		</classes>
 	</test>

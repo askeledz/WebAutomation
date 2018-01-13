@@ -5,8 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
  * @author askeledzija
@@ -26,7 +24,7 @@ public class DataPage {
 
 
     public OldPage goToOldPage() {
-        new WebDriverWait(driver, 60).until(ExpectedConditions.visibilityOf(old_site_link));
+       // new WebDriverWait(driver, 60).until(ExpectedConditions.visibilityOf(old_site_link));
         old_site_link.click();
         return new OldPage(driver);
     }
