@@ -19,29 +19,23 @@ Before you run your tests locally or remotely, you need to:
 
 
 ## How to run LOCAL tests from IDE
-Simply right click on the "src/test/resources/LocalWebDriverListener.xml" and chose "Run As.... --> TestNG Suit"
-I use Eclipse Java EE IDE for Web Developers. Mars 2
+Simply right click on the "src/test/resources/LocalWebDriverListener.xml" and chose "Run As...."
 
 ### Remote configuration
 You don't have to change anything in project, simply:
 
 Start the hub
 
-
-    java -jar selenium-server-standalone-2.53.1.jar -role hub
+    java -jar selenium-server-standalone-3.8.1.jar -role hub -hubConfig DefaultHub.json
 
 Then register the nodes:
 
-FF:
-
-	java -Dwebdriver.ff.driver=/Users/askeledz/Documents/Private/development/selenium/driver/geckodriver2 -jar selenium-server-standalone-2.53.1.jar -role node -hub http://127.0.0.1:4444/grid/register -browser browserName=firefox,version=27,maxInstances=1,platform=LINUX -port 5556
-
 Chrome:
 
-    java -Dwebdriver.chrome.driver=/Users/askeledz/Documents/Private/development/selenium/driver/chromedriver -jar selenium-server-standalone-2.53.1.jar -role node -hub http://127.0.0.1:4444/grid/register -browser browserName=chrome,version=30,maxInstances=1,platform=LINUX -port 5557
+    java -Dwebdriver.chrome.driver=/Users/askeledzija/Documents/Private/Development/selenium/driver/chromedriver -jar selenium-server-standalone-3.8.1.jar -role node -nodeConfig DefaultNodeWebDriver.json
 
 ## How to run REMOTE tests from IDE
-Simply right click on the "src/test/resources/RemoteWebDriverListener.xml" for remote config usage and "Run As.... --> TestNG Suit".
+Simply right click on the "src/test/resources/RemoteWebDriverListener.xml" for remote config usage and "Run As....".
 Please be sure that your HUB and NODES are up&running.
 
 
