@@ -26,13 +26,13 @@ You don't have to change anything in project, simply:
 
 Start the hub
 
-    java -jar selenium-server-standalone-3.8.1.jar -role hub -hubConfig DefaultHub.json
+    java -jar selenium-server-standalone-2.53.1.jar -role hub -hubConfig DefaultHub.json
 
 Then register the nodes:
 
 Chrome:
 
-    java -Dwebdriver.chrome.driver=/Users/askeledzija/Documents/Private/Development/selenium/driver/chromedriver -jar selenium-server-standalone-3.8.1.jar -role node -nodeConfig DefaultNodeWebDriver.json
+    java -jar selenium-server-standalone-2.53.1.jar -Dwebdriver.chrome.driver=/Users/askeledzija/Documents/Private/Development/selenium/driver/chromedriver -role node -nodeConfig DefaultNodeWebDriver.json
 
 ## How to run REMOTE tests from IDE
 Simply right click on the "src/test/resources/RemoteWebDriverListener.xml" for remote config usage and "Run As....".
