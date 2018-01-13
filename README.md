@@ -8,6 +8,8 @@ Project is created on MacBook Pro (Retina, 13-inch, Early 2015), OS X El Capitan
 # IMPORTING PROJECT TO ECLIPSE
 1. File --> Import --> Existing Maven Project (Please be aware that there is no dependencies)
 2. Right click on project --> Build path --> Configure Build Path --> Libraries --> Add External JARs --> Select All JAR files from the "lib" folder. Or you can download Selenium JARS (selenium-server-2.53.1.zip) from following location: http://selenium-release.storage.googleapis.com/index.html?path=2.53/ and import them on same way.
+3. Download and install Firefox v46.0
+https://ftp.mozilla.org/pub/firefox/releases/46.0/
 
 ## Configuration
 Before you run your tests locally or remotely, you need to:
