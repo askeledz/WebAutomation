@@ -5,9 +5,9 @@ To drive the browsers I use Selenium WebDriver.
 Tests can be executed locally or remotely.
 Project is created on MacBook Pro (Retina, 13-inch, Early 2015), OS X El Capitan.
 
-# IMPORTING PROJECT TO ECLIPSE
-1. File --> Import --> Existing Maven Project (Please be aware that there is no dependencies)
-2. Right click on project --> Build path --> Configure Build Path --> Libraries --> Add External JARs --> Select All JAR files from the "lib" folder. Or you can download Selenium JARS (selenium-server-2.53.1.zip) from following location: http://selenium-release.storage.googleapis.com/index.html?path=2.53/ and import them on same way.
+# IMPORTING PROJECT TO INTELIj IDEA
+1. Import Existing Maven Project (Please be aware that there is no dependencies)
+2. Extract lib.zipxxxx fiel and import to build path: File --> Project Structure - Libraries (+ button)-->Java. Or you can download Selenium JARS (selenium-server-2.53.1.zip) from following location: http://selenium-release.storage.googleapis.com/index.html?path=2.53/ and import them on same way.
 3. Download and install Firefox v46.0
 https://ftp.mozilla.org/pub/firefox/releases/46.0/
 
