@@ -34,7 +34,7 @@ Then register the nodes:
 
 Chrome:
 
-    java -jar selenium-server-standalone-2.53.1.jar -Dwebdriver.chrome.driver=/Users/askeledzija/Documents/Private/Development/selenium/driver/chromedriver -role node -nodeConfig DefaultNodeWebDriver.json
+    java -jar selenium-server-standalone-2.53.1.jar -Dwebdriver.chrome.driver=/Users/askeledzija/Documents/Private/Development/workspace/web-automation/chromedriver -role node -nodeConfig DefaultNodeWebDriver.json
 
 ## How to run REMOTE tests from IDE
 Simply right click on the "src/test/resources/RemoteWebDriverListener.xml" for remote config usage and "Run As....".
