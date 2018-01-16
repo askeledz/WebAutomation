@@ -21,6 +21,7 @@ public class LocalDriverFactoryWEB {
         WebDriver driver = null;
         if (browserName.equalsIgnoreCase("firefox")) {
             // selenium-server-standalone-2.53.1 --> FireFox 46.0
+            System.setProperty("webdriver.gecko.driver", "/Users/askeledzija/Documents/Private/Development/workspace/web-automation/geckodriver2");
             DesiredCapabilities capability = DesiredCapabilities.firefox();
             capability.setVersion("57.03");
             capability.setPlatform(Platform.ANY);
@@ -29,7 +30,7 @@ public class LocalDriverFactoryWEB {
             return driver;
         }
         if (browserName.equalsIgnoreCase("chrome")) {
-
+System.setProperty("webdriver.gecko.driver", "/Users/askeledzija/Documents/Private/Development/workspace/web-automation/chromedriver");
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--kiosk");
             driver = new ChromeDriver(options);
